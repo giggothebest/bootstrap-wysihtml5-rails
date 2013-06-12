@@ -5072,6 +5072,16 @@ wysihtml5.dom.parse = (function() {
       };
     })(),
     
+    no: (function() {
+      var REG_EXP = /[^ a-z0-9_\-\.\,\/]/gi;
+      return function(attributeValue) {
+        if (!attributeValue) {
+          return "";
+        }
+        return attributeValue.replace(REG_EXP, "");
+      };
+    })(),
+    
     numbers: (function() {
       var REG_EXP = /\D/g;
       return function(attributeValue) {
