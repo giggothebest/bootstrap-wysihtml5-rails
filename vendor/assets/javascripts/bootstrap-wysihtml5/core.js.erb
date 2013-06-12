@@ -432,8 +432,16 @@
                     "check_attributes": {
                         "width": "numbers",
                         "alt": "alt",
-                        "src": "src",
+                        "src": "no",
+                        "usemap": "no",
+                        "id": "no",
                         "height": "numbers"
+                    }
+                },
+                "map": {
+                    "check_attributes": {
+                        "id": "no",
+                        "name": "no"
                     }
                 },
                 "area": {
@@ -447,7 +455,7 @@
                 },
                 "a":  {
                     check_attributes: {
-                        'href': "src", // important to avoid XSS
+                        'href': "no", // important to avoid XSS
                         'target': 'alt',
                         'rel': 'alt'
                     }
