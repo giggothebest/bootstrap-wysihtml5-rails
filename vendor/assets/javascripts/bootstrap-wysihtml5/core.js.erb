@@ -411,7 +411,8 @@
                 "wysiwyg-color-blue" : 1,
                 "wysiwyg-color-teal" : 1,
                 "wysiwyg-color-aqua" : 1,
-                "wysiwyg-color-orange" : 1
+                "wysiwyg-color-orange" : 1,
+                "rel" : 1
             },
             tags: {
                 "b":  {},
@@ -437,6 +438,7 @@
                         "id": "no",
                         "height": "numbers"
                     }
+                    //"set_class": "rel" //giggo
                 },
                 "map": {
                     "check_attributes": {
@@ -454,7 +456,7 @@
                     }
                 },
                 "a":  {
-                    check_attributes: {
+                    "check_attributes": {
                         'href': "no", // important to avoid XSS
                         'target': 'alt',
                         'rel': 'alt'
