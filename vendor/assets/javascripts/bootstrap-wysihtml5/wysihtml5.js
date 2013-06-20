@@ -5073,7 +5073,7 @@ wysihtml5.dom.parse = (function() {
     })(),
     
     no: (function() { //giggo
-      var REG_EXP = /[^ a-z0-9_\-\.\,\/\:\#]/gi;
+      var REG_EXP = /[^ a-z0-9_\-\.\,\/\:\#\?\=]/gi;
       return function(attributeValue) {
         if (!attributeValue) {
           return "";
